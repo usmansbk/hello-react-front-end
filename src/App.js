@@ -1,9 +1,11 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import LoadingBar from "react-redux-loading-bar";
-import Greeting from "./components/Greeting";
-import store from "./redux/configureStore";
-import { Provider } from "react-redux";
+import React from 'react';
+import {
+  BrowserRouter, Routes, Route, Link,
+} from 'react-router-dom';
+import LoadingBar from 'react-redux-loading-bar';
+import { Provider } from 'react-redux';
+import Greeting from './components/Greeting';
+import store from './redux/configureStore';
 
 const App = () => (
   <Provider store={store}>
